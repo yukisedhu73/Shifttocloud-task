@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -18,7 +17,6 @@ body {
     width: 100%;
 }
 
-/* Logo (Always Visible) */
 .logo {
     margin-left: 30px;
 }
@@ -91,7 +89,7 @@ body {
     border: none;
 }
 
-.menu-button img{
+.menu-button img {
     width: 32px;
     height: 24px;
 }
@@ -170,7 +168,6 @@ body {
     padding-bottom: 40px;
 }
 
-/* Individual item */
 .item {
     display: flex;
     align-items: center;
@@ -204,7 +201,7 @@ body {
     background-color: #ffffff;
     padding: 20px;
     position: relative;
-    box-shadow:15px 15px 0px  rgba(0, 0, 0, 0.3);
+    box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
 .custom-navbar .custom-logo {
@@ -212,7 +209,6 @@ body {
     font-size: 24px;
     font-weight: bold;
     display: none;
-    /* Hide by default */
 }
 
 .custom-navbar .custom-menu {
@@ -221,14 +217,11 @@ body {
     margin: 0;
     padding: 0;
     justify-content: center;
-    /* Center menu items */
     flex: 1;
-    /* Take up remaining space */
 }
 
 .custom-navbar .custom-menu li {
     margin: 0 15px;
-    /* Space between menu items */
 }
 
 .custom-navbar .custom-menu li a {
@@ -236,7 +229,6 @@ body {
     text-decoration: none;
     font-size: 18px;
     padding: 0px 0;
-    /* Add padding for better click area */
     position: relative;
 }
 
@@ -248,7 +240,6 @@ body {
     width: 100%;
     height: 2px;
     background-color: #80b6d9;
-    /* Underline for active menu */
 }
 
 .custom-navbar .custom-menu-toggle {
@@ -264,12 +255,10 @@ body {
     padding-right: 7px;
 }
 
-/* main text  */
 .hero {
     position: relative;
     width: 100%;
     height: 30vh;
-    /* Adjust height as needed */
     background: url('../assets/accelerate_img.jpg') no-repeat left center / cover;
     display: flex;
     align-items: center;
@@ -345,7 +334,6 @@ body {
     position: relative;
     width: 100%;
     height: auto;
-    /* Adjust height as needed */
     background: url('../assets/bg-how-does-office365-mailbox-work.jpg') no-repeat right center / cover;
     display: flex;
     align-items: center;
@@ -354,12 +342,12 @@ body {
     padding-bottom: 30px;
 }
 
-.hero2-container{
-    width: 60% ;
+.hero2-container {
+    width: 60%;
     padding-left: 15%;
 }
 
-.try-btn{
+.try-btn {
     background: #0071bc;
     color: white !important;
     padding: 15px 20px;
