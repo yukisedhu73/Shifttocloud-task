@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/customstyle.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="#">LOGO</a>
+            </div>
+            <!-- Menu Button for Mobile -->
+            <button class="menu-button">
+                <img src="assets/toggle.svg" alt="toggle_icon">
+            </button>
+            <!-- Navigation Menu (Hidden in Mobile) -->
+            <div class="nav-menus">
+                <ul class="menu">
+                    <li><a href="#">Reseller</a></li>
+                    <li class="dropdown">
+                        <a href="#">Products <span class="arrow">&#9660;</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Product 1</a></li>
+                            <li><a href="#">Product 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Video Tutorials</a></li>
+                    <li><a href="#">Free Tools</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Knowledge Base</a></li>
+                </ul>
+                <!-- Right Side Menu -->
+                <ul class="right-menu">
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#" class="mobile-signin">Sign In</a></li>
+                    <li><a href="#" class="web-signin">Sign In ></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="top-section">
+        <div class="breadcrumb">
+            <a href="#">Home</a>
+            <span>/</span>
+            <a href="#">Category</a>
+        </div>
+        <div class="main-head">
+            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing</h1>
+        </div>
+        <div class="play-icon">
+            <img src="assets/play-icon.png" alt="Video Play button">
+        </div>
+        <div class="price-head">
+            <p>Just <span class="price-text">$200</span> For <span class="price-text">100</span> Mailboxes</p>
+        </div>
+        <div class="button-container">
+            <button class="btn1">
+                <span style="font-weight: 500;font-size: 16px;">Free Download</span>
+            </button>
+            <button class="custom-button">
+                <div class="btn-container">
+                    <div class="buy-now">Buy Now!</div>
+                    <div class="discount">75% <span>OFF</span></div>
+                </div>
+            </button>
+        </div>
+        <div class="container-flex">
+            <div class="item">
+                <img src="assets/cloud.png" alt="Image 1">
+                <span class="container-text">Scelerisque eleifend</span>
+            </div>
+            <div class="item">
+                <img src="assets/office.png" alt="Image 2">
+                <span class="container-text">Mattis nunc sed blandit</span>
+            </div>
+            <div class="item">
+                <img src="assets/doc.png" alt="Image 3">
+                <span class="container-text">Mattis nunc sed blandit</span>
+            </div>
+            <div class="item">
+                <img src="assets/folder.png" alt="Image 4">
+                <span class="container-text">Files eget nunc lobortis</span>
+            </div>
+            <div class="item">
+                <img src="assets/folders.png" alt="Image 5">
+                <span class="container-text">Files eget nunc lobortis</span>
+            </div>
+            <div class="item">
+                <img src="assets/office.png" alt="Image 6">
+                <span class="container-text">Files eget nunc lobortis</span>
+            </div>
+        </div>
+    </section>
+    <section class="product-section">
+        <nav class="custom-navbar">
+            <div class="custom-logo">Product</div>
+            <ul class="custom-menu">
+                <li><a href="#overview" class="active"><img src="assets/search.png" class="productImg"
+                            alt="product image1"> Overview</a></li>
+                <li><a href="#features"><img src="assets/feature-selection.png" class="productImg"
+                            alt="product image1">Features</a></li>
+                <li><a href="#how-it-works"><img src="assets/book.png" class="productImg" alt="product image1">How it
+                        works</a></li>
+                <li><a href="#user-manual"><img src="assets/manual.png" class="productImg" alt="product image1">User
+                        Manual</a></li>
+                <li><a href="#faq"><img src="assets/faq.png" class="productImg" alt="product image1">FAQ</a></li>
+                <li><a href="#videos"><img src="assets/video.png" class="productImg" alt="product image1">Videos</a>
+                </li>
+                <li><a href="#pricing"><img src="assets/price-tag.png" class="productImg"
+                            alt="product image1">Pricing</a></li>
+                <li><a href="#screenshots"><img src="assets/photo-camera.png" class="productImg"
+                            alt="product image1">Screenshots</a></li>
+            </ul>
+            <div class="custom-menu-toggle" onclick="toggleCustomMenu()">&#9776;</div>
+        </nav>
+    </section>
+    <section class="text-section">
+        <div class="hero">
+            <h1>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmo - <span class="hero-span">Now 10X
+                    Faster</span></h1>
+        </div>
+        <div class="section-wrapper">
+            <div class="left-content">
+                <p class="highlight-text">dolore magna aliqua dolore magna aliqua!</p>
+                <h2 class="main-heading">Ante metus dictum at tempor commodo ullamcorper</h2>
+                <p class="content-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Nibh mauris cursus mattis molestie a iaculis at erat pellentesque. Amet mauris commodo quis
+                    imperdiet massa tincidunt.
+                    Quisque egestas diam in arcu cursus euismod. Tincidunt id aliquet risus feugiat in ante metus. Dui
+                    accumsan sit amet nulla
+                    facilisi morbi. Nisl nisi scelerisque eu ultrices vitae auctor eu augue. Ut placerat orci nulla
+                    pellentesque.
+                    Diam vel quam elementum pulvinar etiam non quam. Odio ut sem nulla pharetra diam. Tortor condimentum
+                    lacinia quis vel.
+                </p>
+                <p class="content-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Nibh mauris cursus mattis molestie a iaculis at erat pellentesque. Amet mauris commodo quis
+                    imperdiet massa tincidunt.
+                    Quisque egestas diam in arcu cursus euismod. Tincidunt id aliquet risus feugiat in ante metus. Dui
+                    accumsan sit amet nulla
+                    facilisi morbi. Nisl nisi scelerisque eu ultrices vitae auctor eu augue. Ut placerat orci nulla
+                    pellentesque.
+                    Diam vel quam elementum pulvinar etiam non quam. Odio ut sem nulla pharetra diam. Tortor condimentum
+                    lacinia quis vel.
+                </p>
+            </div>
+
+            <div class="right-content">
+                <p class="content-paragraph">
+                    <span class="sub-heading">Ante metus dictum at tempor commodo ullamcorper</span><br>
+                    Tincidunt id aliquet risus feugiat in ante metus. Dui accumsan sit amet nulla facilisi morbi.
+                    Nisl nisi scelerisque eu ultrices vitae auctor eu augue. Ut placerat orci nulla pellentesque.
+                    Diam vel quam elementum pulvinar etiam non quam. Odio ut sem nulla pharetra diam.
+                    Tortor condimentum lacinia quis vel.
+                </p>
+
+                <p class="content-paragraph">
+                    <span class="sub-heading">Ante metus dictum at tempor commodo ullamcorper</span><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Nibh mauris cursus mattis molestie a iaculis at erat pellentesque. Amet mauris commodo quis
+                    imperdiet massa tincidunt.
+                    Quisque egestas diam in arcu cursus euismod.
+                </p>
+
+                <p class="content-paragraph">
+                    <span class="sub-heading">Ante metus dictum at tempor commodo ullamcorper</span><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Nibh mauris cursus mattis molestie a iaculis at erat pellentesque. Amet mauris commodo quis
+                    imperdiet massa tincidunt.
+                    Quisque egestas diam in arcu cursus euismod.
+                </p>
+            </div>
+        </div>
+        <div class="hero2">
+            <div class="hero2-container">
+                <h2 class="main-heading">Quisque egestas dictum at tempor co</h2>
+                <br>
+                <span class="sub-heading">sed do eiusmod at tempor commodo ullamcorper</span><br>
+                <p class="content-paragraph">1. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <p class="content-paragraph">2. Tincidunt id aliquet risus feugiat in ante metus</p>
+                <p class="content-paragraph">3. Pretium vulptate sapien nec sagitis aliquam malesuda bibendum</p>
+                <p class="content-paragraph">4. Eget nullam non nisi est sit amet</p>
+                <div>
+                    <button class="try-btn">Try for Free</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <b>Lorem Ipsum</b>
+                <ul>
+                    <li>Home</li>
+                    <li>Features</li>
+                    <li>Pricing</li>
+                    <li>Support</li>
+                    <li>Download</li>
+                    <li>Slicense</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <b>Support</b>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Video Tutorials</li>
+                    <li>Technical Support</li>
+                    <li>Live Chat</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <b>Company</b>
+                <ul>
+                    <li>Company Inc.</li>
+                    <li>Rehokoth Boach, DE</li>
+                    <li>Unified States</li>
+                    <li>&gt;1 (302) 416-3265</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Horizontal Rule -->
+        <hr>
+        <!-- Additional Footer Menu -->
+        <div class="footer-menu">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Settings</a>
+            <a href="#">Sitemap</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

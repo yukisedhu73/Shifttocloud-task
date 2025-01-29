@@ -1,0 +1,370 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #0f4f79;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo (Always Visible) */
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Menus */
+.nav-menus {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.menu,
+.right-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu li,
+.right-menu li {
+    margin: 0 15px;
+}
+
+.menu a,
+.right-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.dropdown-menu li {
+    margin: 10px 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Mobile Menu Button */
+.menu-button {
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+.menu-button img{
+    width: 32px;
+    height: 24px;
+}
+
+.top-section {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 30%, rgb(226, 240, 253, 0.1) 10%, transparent 50%),
+        radial-gradient(circle at 70% 60%, rgb(226, 240, 253, 0.7) 15%, transparent 55%),
+        radial-gradient(circle at 40% 80%, rgb(226, 240, 253, 0.5) 12%, transparent 60%),
+        linear-gradient(to bottom, rgb(226, 240, 253, 0.1), transparent);
+}
+
+/* breadcrum  */
+.breadcrumb {
+    padding: 10px;
+    margin-left: 41px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #74787b;
+}
+
+.main-head {
+    text-align: center;
+}
+
+.main-head h2 {
+    color: #104a69;
+}
+
+.play-icon,
+.price-head,
+.button-container {
+    text-align: center;
+}
+
+.play-icon img {
+    width: 60px;
+    height: 60px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.price-head p {
+    color: #0c0c0c;
+    font-size: 24px;
+}
+
+.price-text {
+    color: #104a69;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.button-container button {
+    background: #fa665c;
+    color: white !important;
+    padding: 15px 20px;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    border: none;
+    border-radius: 30px;
+}
+
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 10px 20%;
+    padding-bottom: 40px;
+}
+
+/* Individual item */
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0px 20px 20px 20px;
+    width: 200px;
+    text-align: left;
+}
+
+.item img {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+
+
+.container-text {
+    margin-left: 5px;
+    color: #43718a;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    position: relative;
+    box-shadow:15px 15px 0px  rgba(0, 0, 0, 0.3);
+}
+
+.custom-navbar .custom-logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: none;
+    /* Hide by default */
+}
+
+.custom-navbar .custom-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    /* Center menu items */
+    flex: 1;
+    /* Take up remaining space */
+}
+
+.custom-navbar .custom-menu li {
+    margin: 0 15px;
+    /* Space between menu items */
+}
+
+.custom-navbar .custom-menu li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0px 0;
+    /* Add padding for better click area */
+    position: relative;
+}
+
+.custom-navbar .custom-menu li a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #80b6d9;
+    /* Underline for active menu */
+}
+
+.custom-navbar .custom-menu-toggle {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.productImg {
+    height: 18px;
+    width: 18px;
+    padding-right: 7px;
+}
+
+/* main text  */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    /* Adjust height as needed */
+    background: url('../assets/accelerate_img.jpg') no-repeat left center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 40%;
+    max-width: 635px;
+    color: #164e6c;
+}
+
+.hero-span {
+    font-size: 1.8rem;
+    color: #0b7cd1;
+}
+
+
+.section-wrapper {
+    display: flex;
+    max-width: 100%;
+    margin: auto;
+    gap: 40px;
+    padding: 30px 15%;
+}
+
+.left-content {
+    flex: 1;
+    text-align: left;
+}
+
+.right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.highlight-text {
+    font-weight: bold;
+    color: #0f4f79;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.main-heading {
+    color: #0f4f79;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.sub-heading {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.content-paragraph {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.hero2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* Adjust height as needed */
+    background: url('../assets/bg-how-does-office365-mailbox-work.jpg') no-repeat right center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.hero2-container{
+    width: 60% ;
+    padding-left: 15%;
+}
+
+.try-btn{
+    background: #0071bc;
+    color: white !important;
+    padding: 15px 20px;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    border: none;
+    border-radius: 30px;
+}
